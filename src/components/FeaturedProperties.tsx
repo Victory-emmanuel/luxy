@@ -8,7 +8,8 @@ const FeaturedProperties = () => {
   const properties = [
     {
       id: 1,
-      image: "/api/placeholder/400/300",
+      image:
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop&crop=center",
       title: "Modern Luxury Villa",
       location: "Beverly Hills, CA",
       price: "$2,850,000",
@@ -19,7 +20,8 @@ const FeaturedProperties = () => {
     },
     {
       id: 2,
-      image: "/api/placeholder/400/300",
+      image:
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop&crop=center",
       title: "Penthouse Suite",
       location: "Manhattan, NY",
       price: "$4,200,000",
@@ -30,7 +32,8 @@ const FeaturedProperties = () => {
     },
     {
       id: 3,
-      image: "/api/placeholder/400/300",
+      image:
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop&crop=center",
       title: "Waterfront Estate",
       location: "Malibu, CA",
       price: "$6,750,000",

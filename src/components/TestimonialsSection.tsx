@@ -1,29 +1,35 @@
-import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { motion } from "framer-motion";
+import { Star, Quote } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'Property Investor',
-      content: 'Luxury Showcase exceeded all expectations. Their attention to detail and market expertise helped us find the perfect investment property.',
+      name: "Sarah Johnson",
+      role: "Property Investor",
+      content:
+        "Luxury Showcase exceeded all expectations. Their attention to detail and market expertise helped us find the perfect investment property.",
       rating: 5,
-      image: '/api/placeholder/80/80',
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face",
     },
     {
-      name: 'Michael Chen',
-      role: 'Homeowner',
-      content: 'The team\'s professionalism and dedication made our home buying journey seamless. Truly exceptional service from start to finish.',
+      name: "Michael Chen",
+      role: "Homeowner",
+      content:
+        "The team's professionalism and dedication made our home buying journey seamless. Truly exceptional service from start to finish.",
       rating: 5,
-      image: '/api/placeholder/80/80',
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Real Estate Developer',
-      content: 'Outstanding market knowledge and negotiation skills. They secured an excellent deal for our luxury development project.',
+      name: "Emily Rodriguez",
+      role: "Real Estate Developer",
+      content:
+        "Outstanding market knowledge and unparalleled service. They helped us identify prime investment opportunities with exceptional returns.",
       rating: 5,
-      image: '/api/placeholder/80/80',
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
     },
   ];
 
@@ -33,8 +39,8 @@ const TestimonialsSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6">
@@ -42,7 +48,8 @@ const TestimonialsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-gold to-gold-light mx-auto mb-6 rounded-full" />
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Discover what our valued clients say about their experience with Luxury Showcase.
+            Discover what our valued clients say about their experience with
+            Luxury Showcase.
           </p>
         </motion.div>
 
@@ -57,7 +64,7 @@ const TestimonialsSection = () => {
             >
               <Card className="luxury-card p-8 h-full relative">
                 <Quote className="w-8 h-8 text-gold absolute top-6 right-6 opacity-20" />
-                
+
                 <div className="flex items-center mb-6">
                   <img
                     src={testimonial.image}

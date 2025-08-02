@@ -41,10 +41,10 @@ const PropertyDetails = () => {
     description:
       "This stunning modern villa represents the pinnacle of luxury living in Beverly Hills. Featuring contemporary architecture, premium finishes, and breathtaking city views, this property offers an unparalleled lifestyle experience.",
     images: [
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&h=600&fit=crop&crop=center",
     ],
     features: [
       { icon: Wifi, name: "High-Speed Internet" },
@@ -58,7 +58,8 @@ const PropertyDetails = () => {
       name: "Sarah Johnson",
       phone: "+1 (555) 123-4567",
       email: "sarah@luxuryshowcase.com",
-      image: "/api/placeholder/100/100",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
     },
   };
 

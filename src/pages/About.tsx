@@ -1,60 +1,74 @@
-import { motion } from 'framer-motion';
-import { Award, Users, Home, TrendingUp, Target, Eye, Heart } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Card } from '@/components/ui/card';
+import { motion } from "framer-motion";
+import {
+  Award,
+  Users,
+  Home,
+  TrendingUp,
+  Target,
+  Eye,
+  Heart,
+} from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Card } from "@/components/ui/card";
 
 const About = () => {
   const stats = [
-    { icon: Home, value: '500+', label: 'Properties Sold' },
-    { icon: Users, value: '1000+', label: 'Happy Clients' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
-    { icon: TrendingUp, value: '$2B+', label: 'Sales Volume' },
+    { icon: Home, value: "500+", label: "Properties Sold" },
+    { icon: Users, value: "1000+", label: "Happy Clients" },
+    { icon: Award, value: "15+", label: "Years Experience" },
+    { icon: TrendingUp, value: "$2B+", label: "Sales Volume" },
   ];
 
   const team = [
     {
-      name: 'Sarah Johnson',
-      role: 'Founder & CEO',
-      image: '/api/placeholder/300/400',
-      bio: 'With over 15 years in luxury real estate, Sarah founded Luxury Showcase to redefine the premium property experience.',
+      name: "Sarah Johnson",
+      role: "Founder & CEO",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=400&fit=crop&crop=face",
+      bio: "With over 15 years in luxury real estate, Sarah founded Luxury Showcase to redefine the premium property experience.",
     },
     {
-      name: 'Michael Chen',
-      role: 'Senior Property Advisor',
-      image: '/api/placeholder/300/400',
-      bio: 'Michael specializes in high-end residential properties and has facilitated over $500M in luxury transactions.',
+      name: "Michael Chen",
+      role: "Senior Property Advisor",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      bio: "Michael specializes in high-end residential properties and has facilitated over $500M in luxury transactions.",
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Investment Specialist',
-      image: '/api/placeholder/300/400',
-      bio: 'Emily helps clients build exceptional real estate portfolios with strategic investment guidance.',
+      name: "Emily Rodriguez",
+      role: "Investment Specialist",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop&crop=face",
+      bio: "Emily helps clients build exceptional real estate portfolios with strategic investment guidance.",
     },
   ];
 
   const values = [
     {
       icon: Target,
-      title: 'Excellence',
-      description: 'We pursue perfection in every detail, ensuring exceptional service and results for our clients.',
+      title: "Excellence",
+      description:
+        "We pursue perfection in every detail, ensuring exceptional service and results for our clients.",
     },
     {
       icon: Eye,
-      title: 'Transparency',
-      description: 'Honest communication and clear processes build trust and lasting relationships.',
+      title: "Transparency",
+      description:
+        "Honest communication and clear processes build trust and lasting relationships.",
     },
     {
       icon: Heart,
-      title: 'Integrity',
-      description: 'Our ethical approach and commitment to doing right by our clients guides every decision.',
+      title: "Integrity",
+      description:
+        "Our ethical approach and commitment to doing right by our clients guides every decision.",
     },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-12 px-6 bg-gradient-to-r from-charcoal to-charcoal-light">
         <div className="container mx-auto">
@@ -69,8 +83,8 @@ const About = () => {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-gold to-gold-light mx-auto mb-6 rounded-full" />
             <p className="text-xl font-body max-w-3xl mx-auto leading-relaxed opacity-90">
-              Redefining luxury real estate through exceptional service, market expertise, 
-              and an unwavering commitment to our clients' success.
+              Redefining luxury real estate through exceptional service, market
+              expertise, and an unwavering commitment to our clients' success.
             </p>
           </motion.div>
         </div>
@@ -91,18 +105,19 @@ const About = () => {
               </h2>
               <div className="w-16 h-1 bg-gradient-to-r from-gold to-gold-light mb-6 rounded-full" />
               <p className="font-body text-muted-foreground leading-relaxed mb-6">
-                Founded in 2008, Luxury Showcase emerged from a vision to transform the luxury 
-                real estate experience. We recognized that discerning clients deserved more than 
-                traditional real estate services – they needed a partner who understood their 
-                unique needs and aspirations.
+                Founded in 2008, Luxury Showcase emerged from a vision to
+                transform the luxury real estate experience. We recognized that
+                discerning clients deserved more than traditional real estate
+                services – they needed a partner who understood their unique
+                needs and aspirations.
               </p>
               <p className="font-body text-muted-foreground leading-relaxed">
-                Today, we stand as a premier luxury real estate firm, having facilitated over 
-                $2 billion in transactions while maintaining our commitment to personalized 
-                service and exceptional results.
+                Today, we stand as a premier luxury real estate firm, having
+                facilitated over $2 billion in transactions while maintaining
+                our commitment to personalized service and exceptional results.
               </p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -111,7 +126,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="/api/placeholder/600/400"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop&crop=center"
                 alt="Luxury Showcase Office"
                 className="w-full h-96 object-cover rounded-xl shadow-luxury"
               />
@@ -161,7 +176,8 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold to-gold-light mx-auto mb-6 rounded-full" />
             <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              The principles that guide our approach to luxury real estate and client relationships.
+              The principles that guide our approach to luxury real estate and
+              client relationships.
             </p>
           </motion.div>
 
@@ -206,8 +222,8 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-gold to-gold-light mx-auto mb-6 rounded-full" />
             <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Our experienced professionals are dedicated to delivering exceptional results 
-              for every client.
+              Our experienced professionals are dedicated to delivering
+              exceptional results for every client.
             </p>
           </motion.div>
 
