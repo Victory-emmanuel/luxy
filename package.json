@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "luxury-showcase",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Premium luxury real estate showcase application",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -84,3 +85,4 @@
     "vite": "^5.4.1"
   }
 }
+
